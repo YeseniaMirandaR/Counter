@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Counter</title>
+        <style>
+            .click{
+                color:#000000;
+                background-color: rgb(161, 224, 164);
+                border-radius: 2px;
+                font-size: 15px;
+                font-weight: 600;
+                cursor: pointer;
+                height: 40px;
+                width: 75px;
+            }
+            .reset{
+                color:#000000;
+                background-color: rgb(255, 83, 71);
+                font-size: 15px;
+                font-weight: 600;
+                cursor: pointer;
+                height: 40px;
+                width: 75px;
+            }
+            h1{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .counter{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+    <div class=counter>
+        <h1>Counter</h1> 
+        <h2>{{session['counter']}}</h2>
+        <a href="/"><button class="click" type="button">Click</button></a> 
+        <a href="/addVisit+2"><button class="click" type="button">+2</button></a> 
+        <a href="/destroy_session"><button class="reset" type="button">Reset</button></a> 
+    </div>
+    </body>
+</html>
